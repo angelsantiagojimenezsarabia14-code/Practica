@@ -1,0 +1,160 @@
+:root {
+--azul: #4dabf7;
+--naranja: #ff922b;
+--verde: #69db7c;
+--morado: #9775fa;
+--rojo: #ff6b6b;
+--rosa: #f783ac;
+--amarillo: #ffd43b;
+--cafe: #a98274;
+
+--txtcolor: #212529;
+--bgcolor: #f8f9fa;
+
+
+}
+
+body.modo_transparente {
+--azul: #74c0fc;
+--naranja: #ffc078;
+--verde: #8ce99a;
+--morado: #b197fc;
+--rojo: #ffa8a8;
+--rosa: #faa2c1;
+--amarillo: #ffe066;
+--cafe: #c9ada7;
+
+
+--txtcolor: #343a40;
+--bgcolor: #dee2e6;
+
+
+}
+
+body {
+background-color: var(--bgcolor);
+color: var(--txtcolor);
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 2rem;
+transition: background-color 0.5s ease-in-out;
+}
+
+.div_flex {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 2rem;
+max-width: 1200px;
+margin: auto;
+}
+
+.div_flexhijo {
+height: 10rem;
+border-radius: 15px;
+padding: 1rem;
+
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+transition: all 0.5s ease-in-out;
+
+
+}
+
+.azul {
+background-color: var(--azul);
+}
+
+.naranja {
+background-color: var(--naranja);
+}
+
+.verde {
+background-color: var(--verde);
+}
+
+.morado {
+background-color: var(--morado);
+}
+
+.rojo {
+background-color: var(--rojo);
+}
+
+.rosa {
+background-color: var(--rosa);
+}
+
+.amarillo {
+background-color: var(--amarillo);
+}
+
+.cafe {
+background-color: var(--cafe);
+}
+
+
+
+.ASJS_div1:hover {
+transform: scale(1.05);
+}
+
+.ASJS_div2:hover {
+transform: translateX(10px);
+}
+
+.ASJS_div3:hover {
+transform: translateY(-10px);
+}
+
+.ASJS_div4:hover {
+transform: scale(0.95);
+}
+
+.ASJS_div5:hover {
+transform: rotate(5deg);
+}
+
+.ASJS_div6:hover {
+opacity: 0.7;
+}
+
+.ASJS_div7:hover {
+transform: scale(1.05);
+}
+
+.ASJS_div8:hover {
+border-radius: 5px;
+}
+
+
+.div_main {
+display: flex;
+justify-content: center;
+margin-top: 3rem;
+}
+
+.btn {
+padding: 1rem 2rem;
+font-size: 1.2rem;
+
+
+background-color: var(--txtcolor);
+color: var(--bgcolor);
+
+border-radius: 10px;
+border: none;
+
+transition: 0.3s;
+
+
+}
+
+.btn:hover {
+cursor: pointer;
+background-color: var(--bgcolor);
+color: var(--txtcolor);
+}
